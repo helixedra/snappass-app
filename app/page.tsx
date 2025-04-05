@@ -75,16 +75,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 overflow-x-hidden">
       <AppHeader />
-      <StrengthSelector strength={strength} setStrength={setStrength} />
-      <GeneratorArea password={password} />
-      <div>
-        <button
-          className="bg-gradient-to-r from-yellow-600 via-orange-600 to-red-800 text-white font-bold text-3xl px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer
+
+      <div className="flex flex-col items-center justify-center gap-4">
+        <StrengthSelector strength={strength} setStrength={setStrength} />
+        <GeneratorArea password={password} />
+        <div>
+          <button
+            className="mt-4 bg-gradient-to-r from-yellow-600 via-orange-600 to-red-800 text-white font-bold text-3xl px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer
           text-shadow-xs text-shadow-orange-800"
-          onClick={handleGeneratePassword}
-        >
-          Generate
-        </button>
+            onClick={handleGeneratePassword}
+          >
+            Generate
+          </button>
+        </div>
       </div>
       <Footer />
     </main>
