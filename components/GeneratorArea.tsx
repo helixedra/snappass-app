@@ -6,17 +6,38 @@ export default function GeneratorArea({ password }: { password: string }) {
   const [message, setMessage] = React.useState<boolean>(false);
 
   const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text).then(
-      () => {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(
+        () => {
+          setTimeout(() => {
+            setMessage(false);
+          }, 3000);
+          setMessage(true);
+        },
+        (err) => {
+          console.error("Could not copy text: ", err);
+        }
+      );
+    } else {
+      // Fallback for unsupported browsers
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed"; // Prevent scrolling to bottom of page
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      try {
+        document.execCommand("copy");
         setTimeout(() => {
           setMessage(false);
         }, 3000);
         setMessage(true);
-      },
-      (err) => {
+      } catch (err) {
         console.error("Could not copy text: ", err);
       }
-    );
+      document.body.removeChild(textarea);
+    }
   };
 
   const passwordDecorator = (password: string) => {
@@ -40,8 +61,6 @@ export default function GeneratorArea({ password }: { password: string }) {
       {message && <Toaster message={"🙌 Password copied to clipboard!"} />}
       {password && (
         <div className="flex flex-col items-center justify-center">
-          {/* <div className="text-zinc-500">GeneratorArea</div> */}
-
           <div
             className="text-3xl p-4 border-2 border-zinc-500/50 rounded-lg text-center bg-zinc-900/50 text-white mt-4 break-words max-w-full whitespace-normal break-all"
             dangerouslySetInnerHTML={{ __html: decoratedPassword }}

@@ -13,7 +13,7 @@ export default function StrengthSelector({
   };
 
   const classes =
-    "cursor-pointer px-4 py-2 bg-zinc-900 rounded-lg text-xl peer-checked:bg-orange-900/50 peer-checked:text-white peer-checked:bg-orange-700/50 transition-all";
+    "cursor-pointer px-4 py-2 bg-zinc-900 rounded-lg text-xl peer-checked:bg-orange-900/50 peer-checked:text-white peer-checked:bg-orange-700/50 transition-all nowrap whitespace-nowrap hover:bg-zinc-800/50 hover:text-white peer-checked:hover:bg-orange-700/50 peer-checked:hover:text-white";
 
   return (
     <div className="p-4 flex flex-col items-center justify-center">
@@ -46,7 +46,7 @@ export default function StrengthSelector({
             className="hidden peer"
           />
           <label htmlFor="strength2" className={classes}>
-            🥹 Very Strong
+            🥹 Steel
           </label>
         </div>
         <div className="flex items-center gap-2">
