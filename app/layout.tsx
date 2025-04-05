@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const notoFont = Noto_Sans({
   variable: "--font-noto",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoFont.variable} antialiased`}>{children}</body>
+      <GoogleAnalytics gaId="G-DLB6SDVWBX" />
     </html>
   );
 }
