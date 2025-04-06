@@ -2,8 +2,24 @@ import React from "react";
 import Image from "next/image";
 import Toaster from "./Toaster";
 
+//drag and drop -> TEST
+import SortableList, { SortableItem } from "react-easy-sort";
+import arrayMove from "array-move";
+
+//react-sortablejs -> TEST
+import { FC, useState } from "react";
+import { ReactSortable } from "react-sortablejs";
+
 export default function GeneratorArea({ password }: { password: string }) {
   const [message, setMessage] = React.useState<boolean>(false);
+
+  console.log("Password: ", password); ////
+
+  const splitTokens = password
+    .replace(/,/g, "")
+    .split(/(\d+|[^\w\s]|(?=[A-Z]))/g)
+    .filter(Boolean);
+  console.log("Split Tokens: ", splitTokens); ////
 
   const copyToClipboard = (text: string) => {
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -70,7 +86,8 @@ export default function GeneratorArea({ password }: { password: string }) {
           className={`text-3xl p-4 border-2 border-zinc-500/50 rounded-lg text-center bg-zinc-900/50 text-white mt-4 break-words max-w-full whitespace-normal break-all`}
           dangerouslySetInnerHTML={{ __html: decoratedPassword }}
         ></div>
-
+        <DraggableElements elements={splitTokens} />
+        <BasicFunction array={splitTokens} />
         <button
           className="flex items-center cursor-pointer px-4 py-2 rounded-lg text bg-zinc-800/50 text-white mt-4 hover:bg-zinc-700/50 transition duration-300 ease-in-out"
           aria-label="Copy password to clipboard"
@@ -89,3 +106,51 @@ export default function GeneratorArea({ password }: { password: string }) {
     </>
   );
 }
+//drag and drop -> TEST
+const DraggableElements = ({ elements = [] }: { elements?: string[] }) => {
+  const [items, setItems] = React.useState(elements);
+
+  const onSortEnd = (oldIndex: number, newIndex: number) => {
+    setItems((array) => arrayMove(array, oldIndex, newIndex));
+  };
+
+  return (
+    <SortableList
+      onSortEnd={onSortEnd}
+      className="list flex gap-1 flex-wrap mt-4"
+      draggedItemClassName="dragged"
+    >
+      {items &&
+        items.map((item, index) => (
+          <SortableItem key={item + index}>
+            <div className="item w-fit select-none text-lg font-bold flex items-center justify-center py-2 px-0.5 border border-transparent hover:border hover:border-zinc-700 rounded-lg bg-zinc-800/50 text-white">
+              {item}
+            </div>
+          </SortableItem>
+        ))}
+    </SortableList>
+  );
+};
+
+interface BasicFunctionProps {
+  array: string[];
+}
+
+export const BasicFunction: FC<BasicFunctionProps> = ({ array }) => {
+  const [state, setState] = useState(
+    array.map((item, index) => ({ id: index, name: item }))
+  );
+
+  return (
+    <ReactSortable list={state} setList={setState} className="flex gap-1 my-6">
+      {state.map((item) => (
+        <div
+          key={item.id}
+          className="select-none text-2xl py-2 px-0.5 rounded-lg hover:cursor-grab bg-zinc-800/50 text-white"
+        >
+          {item.name}
+        </div>
+      ))}
+    </ReactSortable>
+  );
+};

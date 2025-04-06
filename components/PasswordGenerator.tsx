@@ -29,7 +29,7 @@ export default function PasswordGenerator() {
   };
 
   const getRandomSymbol = () => {
-    const symbols = "&+.";
+    const symbols = "&+.-$";
     const randomIndex = Math.floor(Math.random() * symbols.length);
     return symbols[randomIndex];
   };
