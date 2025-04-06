@@ -71,7 +71,7 @@ export default function PasswordGenerator() {
     setPassword(newPassword);
   };
   return (
-    <div>
+    <div className="motion-preset-fade">
       <div className="flex flex-col items-center justify-center gap-4">
         <StrengthSelector strength={strength} setStrength={setStrength} />
         <GeneratorArea password={password} />

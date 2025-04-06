@@ -21,7 +21,7 @@ export default function Description() {
   ];
 
   return (
-    <div className="my-8 text-center">
+    <div className="my-8 text-center motion-preset-fade">
       <p className=" text-zinc-400 max-w-3xl">
         Still relying on{" "}
         <span className="text-sm bg-gray-100/10 rounded px-1">pet123</span> or{" "}
@@ -40,7 +40,7 @@ export default function Description() {
         <p className="font-semibold mb-1">
           SnapPass creates passwords that are:
         </p>
-        <ul className="flex gap-4 justify-center m-4">
+        <ul className="flex gap-4 justify-center m-4 ">
           <Carousel>
             {features.map((feature, index) => (
               <li key={index} className="embla__slide">
