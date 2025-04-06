@@ -22,7 +22,7 @@ export default function Description() {
 
   return (
     <div className="my-8 text-center motion-preset-fade">
-      <p className=" text-zinc-400 max-w-3xl">
+      <div className=" text-zinc-400 w-92 md:w-144 mx-auto">
         Still relying on{" "}
         <span className="text-sm bg-gray-100/10 rounded px-1">pet123</span> or{" "}
         <span className="text-sm bg-gray-100/10 rounded px-1">
@@ -34,7 +34,7 @@ export default function Description() {
           Xk8#qL@9
         </span>{" "}
         passwords that make you reset them every week? 😤
-      </p>
+      </div>
 
       <div className="mt-8 flex flex-col items-center text-zinc-400">
         <p className="font-semibold mb-1">
@@ -44,7 +44,7 @@ export default function Description() {
           <Carousel>
             {features.map((feature, index) => (
               <li key={index} className="embla__slide">
-                <div className="embla__slide__number flex items-center flex-col text-center bg-zinc-600/10 py-8 px-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <div className="embla__slide__number flex items-center flex-col text-center bg-zinc-400/10 py-8 px-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
                   <span className="flex items-center justify-center bg-zinc-500/20 w-10 h-10 rounded-full mr-2 text-xl">
                     {feature.icon}
                   </span>
@@ -63,7 +63,7 @@ export default function Description() {
         </ul>
       </div>
 
-      <div className="mt-8 max-w-md mx-auto text-center">
+      <div className="mt-8 w-88 md:w-126 mx-auto text-center">
         <p className="text-xl p-2 font-medium">
           With SnapPass, your password isn't just security,{" "}
           <span className="text-orange-300">it's a tiny masterpiece!</span> 🎨
