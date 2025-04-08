@@ -1,12 +1,75 @@
 export const rhymedPairs = {
-  gravity: ["moon cavity", "space levity"], //
-  waste: ["fast haste", "plain taste", "quiet paste"], //??
+  gravity: [
+    "deep cavity",
+    "high levity",
+    "dark brevity",
+    "small entity",
+    "pure clarity",
+    "wild sanity",
+    "old vanity",
+    "true unity"
+  ], //
+  waste: [
+    "quick haste",
+    "sweet taste",
+    "soft paste",
+    "big waste",
+    "he faced",
+    "she raced",
+    "old base",
+    "red lace"
+  ],
   friction: ["science fiction", "speed addiction"],
-  doubt: ["cloud shout", "dark bout", "mist pout"],
-  emissions: ["smoke streams", "gas dreams", "air beams"],
-  meaning: ["deep feeling", "clear seeing", "true being"],
-  plastic: ["soft elastic", "smooth drastic", "hard static"],
-  knowledge: ["smart edge", "big pledge", "clear ledge"],
+  doubt: [
+    "loud shout",
+    "he pout",
+    "big bout",
+    "soft scout",
+    "she tout",
+    "old route",
+    "red spout",
+    "true clout"
+  ],
+  emissions: [
+    "new missions",
+    "old visions",
+    "big fissions",
+    "clear sessions",
+    "she listens",
+    "soft cushions",
+    "red passions",
+    "true lessons"
+  ],
+  meaning: [
+    "soft leaning",
+    "clear cleaning",
+    "big weaning",
+    "she beaming",
+    "loud screaming",
+    "old gleaming",
+    "red seeming",
+    "true greening"
+  ],
+  plastic: [
+    "soft elastic",
+    "big drastic",
+    "clear plastic",
+    "she spastic",
+    "loud fantastic",
+    "old classic",
+    "red sarcastic",
+    "true gymnastic"
+  ],
+  knowledge: [
+    "big college",
+    "old pledge",
+    "clear edge",
+    "she dredge",
+    "soft ledge",
+    "red badge",
+    "true wedge",
+    "new hedge"
+  ],
   trust: ["faith dust", "solid crust", "honest must"],
   love: ["pure dove", "kind glove", "sweet shove"],
   life: ["wild strife", "sharp knife", "good wife"],
@@ -16,14 +79,41 @@ export const rhymedPairs = {
   shot: ["red hot", "jackpot", "quick spot"],
   team: ["strong beam", "bold stream", "one dream"],
   vision: ["object collision", "hard decision", "long division"], //
-  step: ["bold rep", "firm pep", "sure leap"],
+  step: [
+    "big prep",
+    "soft pep",
+    "he leapt",
+    "she kept",
+    "old rep",
+    "red swept",
+    "true depth",
+    "new wept"
+  ],
   world: ["2 old", "shiny pearl", "he told", "black gold"],
   hearts: ["warm parts", "soft charts", "kind arts"],
   souls: ["deep roles", "calm goals", "pure tolls"],
   faces: ["bright places", "kind graces", "warm spaces"],
   hands: ["strong bands", "firm lands", "steady sands"],
-  paths: ["hidden baths", "quiet wraths", "calm laths"],
-  lives: ["full hives", "rich drives", "bright thrives"],
+  paths: [
+    "big baths",
+    "soft maths",
+    "he laughs",
+    "she hath",
+    "old laths",
+    "red wraths",
+    "true oaths",
+    "new paths"
+  ],
+  lives: [
+    "big hives",
+    "soft knives",
+    "he drives",
+    "she thrives",
+    "old wives",
+    "red dives",
+    "true strives",
+    "new fives"
+  ],
   eyes: [
     "blue skies",
     "small fries",
@@ -36,16 +126,52 @@ export const rhymedPairs = {
   ],
   minds: ["sharp finds", "clear binds", "wise kinds"],
   forces: ["strong courses", "big sources", "great horses"],
-  wishes: ["sweet kisses", "soft blisses", "kind riches"],
+  wishes: [
+    "happy dishes",
+    "quiet fishes",
+    "brave swishes",
+    "gentle kisses",
+    "tasty riches",
+    "sunny pitches",
+    "clever niches",
+    "wild dashes"
+  ],
   kings: ["great rings", "noble wings", "wise springs"],
-  rules: ["firm tools", "clear pools", "bright jewels"],
+  rules: [
+    "shiny jewels",
+    "busy fools",
+    "calm pools",
+    "swift mules",
+    "cozy stools",
+    "bright tools",
+    "lazy duels",
+    "cool schools"
+  ],
   steps: ["bold reps", "fill gaps", "strong peps"],
   words: ["wise chords", "clear boards", "true swords"],
   fates: ["dark gates", "grim weights", "strange baits"],
   days: ["bright rays", "warm plays", "clear ways"],
   keys: ["golden breeze", "shining seas", "precious trees"],
-  seasons: ["calm reasons", "wild seasons", "soft beacons"],
-  elements: ["old parts", "bright starts", "clear hearts"],
+  seasons: [
+    "happy reasons",
+    "quiet lessons",
+    "bold treasons",
+    "gentle prisons",
+    "sunny visions",
+    "wild poisons",
+    "clever seasons",
+    "fresh dozens"
+  ],
+  elements: [
+    "wild sentiments",
+    "calm presents",
+    "sharp implements",
+    "sweet scents",
+    "vast fragments",
+    "bold accents",
+    "rare torments",
+    "pure intents"
+  ],
   walls: ["quiet calls", "shadowy halls", "lonely falls"],
   corners: ["hidden warners", "sharp adorners", "quiet mourners"],
   wheels: ["fast deals", "rolling feels", "steady heels"],
@@ -59,7 +185,16 @@ export const rhymedPairs = {
   fingers: ["quick bringers", "soft singers", "strong clingers"],
   lights: ["soft nights", "warm sights", "clear fights"],
   phases: ["calm gazes", "slow mazes", "bright blazes"],
-  points: ["sharp joints"],
+  points: [
+    "loud joints",
+    "smooth anoints",
+    "quick appoints",
+    "brave points",
+    "cool hints",
+    "wild mints",
+    "sharp paints",
+    "deep taints"
+  ],
   years: ["past tears", "5 gears", "new cheers"],
   strings: ["tight wings", "soft flings", "clear rings"],
   packs: ["strong stacks", "fit racks", "tight sacks"],
@@ -68,7 +203,16 @@ export const rhymedPairs = {
   wings: ["swift stings", "broad rings", "light flings"],
   months: ["cold fronts", "long hunts", "short stunts"],
   wonders: ["big thunders", "old blunders", "great plunders"],
-  seas: ["wild keys", "deep pleas", "calm trees"],
+  seas: [
+    "calm peas",
+    "swift fleas",
+    "bright teas",
+    "wild bees",
+    "soft keys",
+    "tall trees",
+    "cool breeze",
+    "deep seas"
+  ],
   heavens: ["high ravens", "pure leavens"],
   colors: ["bright scholars", "soft hollers", "kind dollars"],
   sins: ["dark wins", "deep pins", "grim fins"],
@@ -78,7 +222,16 @@ export const rhymedPairs = {
   notes: ["sweet coats", "clear floats", "soft throats"],
   arms: ["strong charms", "firm harms", "quick swarms"],
   tracks: ["fast racks", "smooth stacks", "quick sacks"],
-  circles: ["silent turtles", "endless purples"], //
+  circles: [
+    "bright sparkles",
+    "quiet marbles",
+    "swift hurdles",
+    "soft turtles",
+    "wild pickles",
+    "tall steeples",
+    "cool tickles",
+    "deep wrinkles"
+  ],
   dreams: [
     "bright beams",
     "soft creams",
@@ -89,8 +242,25 @@ export const rhymedPairs = {
     "old seams",
     "red themes",
   ],
-  songs: ["sweet gongs", "soft longs", "clear throngs"],
+  songs: [
+    "happy gongs",
+    "quiet wrongs",
+    "swift thongs",
+    "brave longs",
+    "soft prongs",
+    "wild dongs",
+    "cool tongs",
+    "deep belongs"
+  ],
   moons: ["pale tunes", "soft dunes", "bright runes"],
   gates: ["dark fates", "grim weights", "strange baits"],
-  dragons: ["fierce wagons", "wild flagons", "strong lagans"],
-};
+  dragons: [
+    "fierce wagons",
+    "silent pagons",
+    "swift flagons",
+    "bold lagons",
+    "dark magons",
+    "wild tagons",
+    "cool sagons",
+    "deep jargons"
+  ]};
