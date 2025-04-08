@@ -17,6 +17,8 @@ export const metadata = {
     ],
     url: "https://snappass.capps.fun",
     type: "website",
+    logo: "https://snappass.capps.fun/images/logo.png",
+    
   },
   twitter: {
     card: "summary_large_image",
