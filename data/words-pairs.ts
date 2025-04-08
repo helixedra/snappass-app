@@ -3,7 +3,6 @@ export const wordsPairs = {
     "gravity", // "Zero gravity"
     "waste", // "Zero waste"
     "friction", // "Zero friction"
-    "tolerance", // "Zero tolerance"
     "doubt", // "Zero doubt" (absolute certainty)
     "emissions", // "Zero emissions" (future cities)
     "meaning", // "Zero meaning" (absurdism)
@@ -31,7 +30,7 @@ export const wordsPairs = {
     "hands", // "Two hands" (cooperation)
     "paths", // "Two paths" (choices)
     "lives", // "Two lives" (reincarnation)
-    "halves", // "Two halves" (completion)
+    "eyes",
     "minds", // "Two minds" (debate)
     "forces", // "Two forces" (conflict)
   ],
@@ -57,7 +56,6 @@ export const wordsPairs = {
     "directions", // "Four directions" (navigation)
     "letters", // "Four letters" (word games)
     "limbs", // "Four limbs" (anatomy)
-    "steps", // "Four steps" (method)
   ],
   five: [
     "senses", // "Five senses" (biology)
@@ -110,7 +108,7 @@ export const wordsPairs = {
   nine: [
     "lives", // "Nine lives" (cats)
     "circles", // "Nine circles" (Dante’s Inferno)
-    "realms", // "Nine realms" (Norse mythology)
+    "dreams",
     "songs", // "Nine songs" (music)
     "steps", // "Nine steps" (process)
     "moons", // "Nine moons" (astronomy)
